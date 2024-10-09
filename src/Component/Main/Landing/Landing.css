@@ -30,7 +30,6 @@ section {
     color: rgb(173, 167, 167);
     background-color: white;
     padding: 10px;
-    border-radius: 10%;
     background-image: url("../../../../public/images/general/header-nav/global-nav-bg.png");
     background-size: 2px;
 }
@@ -50,7 +49,7 @@ h2 {
 @media screen and (max-width: 800px) {
     .containers {
         animation: none;
-        background-image: url("../../../../public/images/main page/landing-part/MWII.jpg");
+        background-image: url("../../../../public/images/main page/landing-part/landing.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

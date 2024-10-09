@@ -5,10 +5,10 @@ import './Grid.css';
 // src/Component/Main/Grid/Grid.js
 export default function Grid() {
   const dataList = [
-    {image: './images/main page/grid-pics-part/6.15-hub-s4-keyart-tout-small.jpg', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 1'},
-    {image: './images/main page/grid-pics-part/6.21-hub-s4-wz-sm-tout.jpg', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 2'},
-    {image: './images/main page/grid-pics-part/6.21-hub-s4-bp-sm-tout.jpg', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 3'},
-    {image: './images/main page/grid-pics-part/cq5dam.thumbnail.319.319(8).jpg', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 4'}
+    {image: './images/main page/grid-pics-part/1.webp', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 1'},
+    {image: './images/main page/grid-pics-part/2.webp', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 2'},
+    {image: './images/main page/grid-pics-part/3.webp', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 3'},
+    {image: './images/main page/grid-pics-part/result.webp', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 4'}
   ]
 
   return (

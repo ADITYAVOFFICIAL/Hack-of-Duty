@@ -18,21 +18,6 @@ export default function Slider() {
         <div className='title-part'>
           <span>Sponsors</span>
         </div>
-        <div className='filter-part'>
-          <div className='filters'>
-            <span>filter:</span>
-          </div>
-          <div className='buttons-filter'>
-            <button className='no'></button>
-            <button className='no'></button>
-            <button className='no'></button>
-            <button className='no'></button>
-            <button className='no'></button>
-          </div>
-          <div className='view-all'>
-            <a href="#">view all &gt;</a>
-          </div>
-        </div>
       </div>
       <div className='slider-main'>
         <div className='slider-tainer'>
