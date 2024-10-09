@@ -25,7 +25,7 @@ export default function Landing() {
     <div className="containers">
       {/* Background Video */}
       <video autoPlay loop muted={isMuted} className="video-bg">
-        <source src="/images/sol.mp4" type="video/mp4" />
+        <source src="/images/hero.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

@@ -5,7 +5,7 @@ import GetGame from './Component/Main/GetGame/GetGame';
 import Grid from './Component/Main/Grid/Grid';
 import Landing from './Component/Main/Landing/Landing';
 import Slider from './Component/Main/Slider/Slider';
-
+import Poster from "./Component/Main/Poster/Poster"
 export default function App() {
   return (
     <>
@@ -14,6 +14,7 @@ export default function App() {
       <Grid />
       <GetGame />
       <Slider />
+      <Poster />
       <Footer />
     </>
   )
