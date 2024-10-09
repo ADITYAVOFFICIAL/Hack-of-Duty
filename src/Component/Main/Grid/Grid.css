@@ -1,0 +1,133 @@
+.container-grid-part {
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.one {
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url("./../../../../public/images/main page/grid-pics-part/cq5dam.thumbnail.319.319\(10\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: picShake 5s linear infinite;
+    transition: scale 2s;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box span {
+    margin-left: .5rem;
+    width: 600px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.one img {
+    width: 300px;
+    margin: 0 2rem;
+}
+
+@keyframes picShake {
+    0%, 100% {
+        transform: scale(1.00);
+    }
+    20% {
+        transform: scale(1.01);
+    }
+    40% {
+        transform: scale(1.01);
+    }
+    60% {
+        transform: scale(1.01);
+    }
+    20% {
+        transform: scale(1.00);
+    }
+}
+
+/***** responsive codes *****/
+
+@media screen and (max-width: 980px) {
+
+    .container-grid-part {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-auto-flow: column;
+        margin-top: -400px;
+    }
+
+    .text-box span {
+        font-size: 1.4rem;
+        width: 400px;
+    }
+
+    .one img {
+        width: 200px;
+        margin: 0 2rem;
+    }
+
+}
+
+@media screen and (max-width: 801px) {
+
+    .container-grid-part {
+        top: 25rem;
+    }
+
+    .one {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-box span {
+        text-align: center;
+        font-size: 1.1rem;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .one img {
+        width: 250px;
+        margin: 0 2rem;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+
+    .text-box span {
+        text-align: center;
+        font-size: .9rem;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .one img {
+        width: 150px;
+        margin: 0 2rem;
+    }
+
+    .container-grid-part {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+}
