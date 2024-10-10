@@ -50,8 +50,8 @@ export default function Footer() {
             <Icon {...iconData[11]} />   
             </div>
             <div className='right-icons'>
-            <img src="./images/general/footer-part/esrb-privacy.jpg" alt="logo" className='img-icon2' /> 
-            <img src="./images/general/footer-part/cod-hub-esrb-en.png" alt="logo" className='img-icon1' /> 
+            <img src="./icons/acm.webp" alt="logo" className='img-icon2' /> 
+            <img src="./icons/acmfull.webp" alt="logo" className='img-icon1' /> 
             </div>
         </div>
         <div className='footer-detail'>

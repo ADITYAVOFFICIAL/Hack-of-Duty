@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Hitmarker-Text';
+    src: url('/public/hitmarkertext.ttf') format('truetype');
+}
 .container-grid-part {
     position: relative;
     top: 50px;
@@ -23,10 +27,26 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    animation: picShake 5s linear infinite;
+    animation: picShake 2s linear infinite;
     transition: scale 2s;
 }
-
+.one button {
+    background-color: #ed772d;
+    color: #262523;
+    width: 20rem;
+    font-size: 1.5em; /* Further increase the font size */
+    padding: 45px 60px; /* Further adjust padding to increase button size */
+    border: none; /* Remove default border */
+    box-shadow: 0 0 10px #ed772d; /* Add glow effect */
+    transition: box-shadow 0.3s ease-in-out;
+    pointer-events: none; 
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.prizepool{
+    font-family: 'Hitmarker-Text', sans-serif;
+}
 .text-box {
     display: flex;
     flex-direction: column;
@@ -42,8 +62,8 @@
 }
 
 .one img {
-    width: 300px;
-    margin: 0 2rem;
+    width: 500px;
+    margin: 0 10rem;
 }
 
 @keyframes picShake {
@@ -108,6 +128,12 @@
     .one img {
         width: 250px;
         margin: 0 2rem;
+    }
+    .one button{
+        padding: 10px;
+    }
+    .prizepool{
+        font-size: 1.5rem!important;
     }
 
 }

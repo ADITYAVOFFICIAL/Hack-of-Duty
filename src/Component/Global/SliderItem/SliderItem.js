@@ -8,7 +8,7 @@ export default function SliderItem({image, text}) {
                 <img src={image} alt="slider image" />
             </div>
             <div className="detail">
-                <span>{text}</span>
+                <span className='slidertxt'>{text}</span>
             </div>
         </div>
     </>

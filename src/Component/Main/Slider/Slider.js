@@ -16,7 +16,7 @@ export default function Slider() {
     <div className="container-slider">
       <div className='header-detail'>
         <div className='title-part'>
-          <span>Sponsors</span>
+          <span className='sponsorstitle'>Sponsors</span>
         </div>
       </div>
       <div className='slider-main'>

@@ -12,7 +12,7 @@ export default function GridItem({image, logo, text}) {
               <img src={logo} alt="logo icon" />
             </div>
             <div className='text-part'>
-              <span>{text}</span>
+              <span className='gridtext'>{text}</span>
             </div>
           </div>
       </div>

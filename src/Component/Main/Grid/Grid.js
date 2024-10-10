@@ -15,9 +15,9 @@ export default function Grid() {
     <>
         <div className="container-grid-part">
             <div id="tickets-section" className='one'>
-              <img src=".\images\main page\grid-pics-part\CDLChampionship_2022_LOGO.png" alt="cld icon" />
+              <img src=".\images\main page\grid-pics-part\bo3.webp" alt="cld icon" />
               <div className="text-box">
-              <span>PRIZE POOL</span>
+              <span className='prizepool'>PRIZE POOL</span>
               <Button text={"30,000 INR"} />
               </div>
             </div>

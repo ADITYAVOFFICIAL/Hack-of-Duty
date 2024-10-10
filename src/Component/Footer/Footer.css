@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Hitmarker-Text';
+    src: url('/public/hitmarkertext.ttf') format('truetype');
+  }
 .container-footer {
     margin: 0 auto;
     height: 600px;
@@ -26,6 +30,7 @@
     font-size: .9rem;
     color: #a59d95;
     text-decoration: none;
+    font-family: 'Hitmarker-Text', sans-serif;
 }
 
 .footer-icons {
@@ -66,6 +71,7 @@
 .footer-detail span {
     text-transform: none;
     font-weight: bold;
+    font-family: 'Hitmarker-Text', sans-serif;
 }
 
 /***** responsive codes *****/

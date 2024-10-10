@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Hitmarker-Text';
+  src: url('/public/hitmarkertext.ttf') format('truetype');
+}
 .item-tainer {
     width: 225px;
     height: 200px;
@@ -5,7 +9,10 @@
     flex-direction: column;
     margin: 0 1rem;
 }
-
+.slidertxt{
+    font-family: 'Hitmarker-Text', sans-serif;
+    color: #afadab!important;
+}
 .img-part {
     width: 100%;
     height: auto;

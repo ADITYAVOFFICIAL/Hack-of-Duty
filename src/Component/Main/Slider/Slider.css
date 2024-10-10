@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Hitmarker-Text';
+  src: url('/public/hitmarkertext.ttf') format('truetype');
+}
 .container-slider {
     position: relative;
     top: 3.5rem;
@@ -110,7 +114,11 @@
   .right-arrow {
     transform: rotate(180deg);
   }
-  
+  .sponsorstitle{
+    font-family: 'Hitmarker-Text', sans-serif;
+    font-size: 2rem;
+    color: #a59d95;
+  }
   /***** responsive codes *****/
 
 @media screen and (max-width: 1450px) {

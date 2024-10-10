@@ -34,7 +34,7 @@ export default function Landing() {
           <img src="./images/main page/landing-part/cod-mw2-logo.png" alt="mw2 logo" />
         </div>
         <div>
-          <h2>SRMSIGKDD's FIRST FLAGSHIP HACKATHON</h2>
+          <h2 className='headingtext'>SRMSIGKDD's FLAGSHIP HACKATHON</h2>
           <div className='buttons-box'>
             <Button text={'register now'} onClick={redirectToDevfolio}/>
             <Button text={'Learn More'} onClick={handleLearnMoreClick} />
