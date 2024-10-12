@@ -13,7 +13,7 @@ export default function Grid() {
 
   return (
     <>
-        <div className="container-grid-part">
+        <div className="container-grid-part" id="rounds">
             <div id="tickets-section" className='one'>
               <img src=".\images\main page\grid-pics-part\bo3.webp" alt="cld icon" />
               <div className="text-box">

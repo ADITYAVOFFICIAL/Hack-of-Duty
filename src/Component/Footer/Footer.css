@@ -32,6 +32,12 @@
     text-decoration: none;
     font-family: 'Hitmarker-Text', sans-serif;
 }
+.footer-nav li  a:hover {
+    cursor: url('/public/icons/hov.png'), auto;
+}
+.footer-nav li  a:active {
+    cursor: url('/public/icons/conf.png'), auto;
+}
 
 .footer-icons {
     margin-top: 2rem;

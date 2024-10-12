@@ -12,7 +12,7 @@ export default function GetGame() {
 
   return (
     <>
-    <div className="container-game">
+    <div className="container-game" id="tracks">
       <h1 className='title font-bold'>Tracks</h1>
       <div className='game-tainer'>
         <a href="#"><GameItem {...gameData[0]} /></a>

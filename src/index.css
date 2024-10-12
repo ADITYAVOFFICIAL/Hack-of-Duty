@@ -1,0 +1,19 @@
+body {
+    cursor: url('/public/icons/cursor.png'), auto;
+}
+
+button:hover, .nav-link:hover, .mute-icon:hover {
+    cursor: url('/public/icons/hov.png'), auto;
+}
+
+button:active, .nav-link:active, .mute-icon:active {
+    cursor: url('/public/icons/conf.png'), auto;
+}
+::-moz-selection {
+    color: #57abd7;
+    background: rgb(44, 44, 44);
+  }
+  ::selection {
+    color:#ed772d;
+    background: rgb(44, 44, 44);
+  }

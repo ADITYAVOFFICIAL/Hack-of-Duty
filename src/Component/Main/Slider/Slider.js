@@ -13,7 +13,7 @@ export default function Slider() {
   ];
 
   return (
-    <div className="container-slider">
+    <div className="container-slider" id="sponsors">
       <div className='header-detail'>
         <div className='title-part'>
           <span className='sponsorstitle'>Sponsors</span>

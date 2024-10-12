@@ -29,10 +29,10 @@ export default class NavBar extends React.Component {
                         </div>
                         <nav>
                             <ul className={`nav-list ${this.state.showMobileMenu ? 'active' : ''}`}>
-                                <li><a href="#">TRACKS</a></li>
-                                <li><a href="#">ROUNDS</a></li>
-                                <li><a href="#">SPONSORS</a></li>
-                                <li><a href="#">FEEDBACK</a></li>
+                                <li><a href="#tracks">TRACKS</a></li>
+                                <li><a href="#rounds">ROUNDS</a></li>
+                                <li><a href="#sponsors">SPONSORS</a></li>
+                                <li><a href="#feedback">FEEDBACK</a></li>
                             </ul>
                         </nav>
                     </div>

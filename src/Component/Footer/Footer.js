@@ -4,18 +4,9 @@ import './Footer.css';
 export default function Footer() {
 
     const iconData = [
-        {image: './images/general/footer-part/atvi-shanghai-logo.png'},
-        {image: './images/general/footer-part/activision-logo.svg'},
-        {image: './images/general/footer-part/beenox-logo.png'},
-        {image: './images/general/footer-part/toys-for-bob-logo.svg'},
-        {image: './images/general/footer-part/demonware-logo.png'},
-        {image: './images/general/footer-part/digital-legends-logo.png'},
-        {image: './images/general/footer-part/high-moon-logo.png'},
-        {image: './images/general/footer-part/raven-logo.png'},
-        {image: './images/general/footer-part/activision-logo.svg'},
-        {image: './images/general/footer-part/solid-state-logo.png'},
-        {image: './images/general/footer-part/infinity-ward-logo.svg'},
-        {image: './images/general/footer-part/treyarch-logo.svg'}
+        {image: './images/general/footer-part/acm.webp'},
+        {image: './images/general/footer-part/kdd.webp'},
+        {image: './images/general/footer-part/srm.webp'},
     ]
 
   return (
@@ -23,15 +14,15 @@ export default function Footer() {
     <div className="container-footer">
         <div className='footer-nav'>
             <ul>
-                <li><a href="#">Legal</a></li>
+                <li><a href="https://www.instagram.com/srmsigkdd">INSTAGRAM</a></li>
                 |
-                <li><a href="#">Term of use</a></li>
+                <li><a href="https://www.linkedin.com/company/acmsigkddsrm">LINKEDIN</a></li>
                 |
-                <li><a href="#">Privacy policy</a></li>
+                <li><a href="https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER">GITHUB</a></li>
                 |
-                <li><a href="#">cookie policy</a></li>
+                <li><a href="https://www.srmist.edu.in/department/department-of-data-science-and-business-systems/srm-sig-kdd-students-chapter/">SRM WEBSITE</a></li>
                 |
-                <li><a href="#">support</a></li>
+                <li><a href="https://x.com/srmsigkdd">TWITTER</a></li>
             </ul>
         </div>
         <div className='footer-icons'>
@@ -39,18 +30,8 @@ export default function Footer() {
             <Icon {...iconData[0]} />
             <Icon {...iconData[1]} />
             <Icon {...iconData[2]} />
-            <Icon {...iconData[3]} />
-            <Icon {...iconData[4]} />
-            <Icon {...iconData[5]} />
-            <Icon {...iconData[6]} />
-            <Icon {...iconData[7]} />
-            <Icon {...iconData[8]} />
-            <Icon {...iconData[9]} />
-            <Icon {...iconData[10]} />
-            <Icon {...iconData[11]} />   
             </div>
             <div className='right-icons'>
-            <img src="./icons/acm.webp" alt="logo" className='img-icon2' /> 
             <img src="./icons/acmfull.webp" alt="logo" className='img-icon1' /> 
             </div>
         </div>

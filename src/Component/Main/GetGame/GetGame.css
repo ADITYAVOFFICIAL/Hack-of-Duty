@@ -40,7 +40,6 @@
     bottom: 0;
     padding: .5rem 1.5rem;
     backdrop-filter: blur(2px);
-    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5); 
     font-family: 'Hitmarker-Text', sans-serif;
 }

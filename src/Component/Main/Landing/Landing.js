@@ -1,11 +1,24 @@
-// src/Component/Main/Landing/Landing.js
 import './Landing.css';
 import Button from './../../Global/Button/Button';
-import { useState } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Landing() {
   const [isMuted, setIsMuted] = useState(true);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Initial check for mobile
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Check initial screen size
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleLearnMoreClick = () => {
     document.getElementById('tickets-section').scrollIntoView({ behavior: 'smooth' });
@@ -21,11 +34,14 @@ export default function Landing() {
     setIsMuted(video.muted);
   };
 
+  // Determine the correct video source based on isMobile
+  const videoSrc = useMemo(() => (isMobile ? "/images/mobile.mp4" : "/images/hero.mp4"), [isMobile]);
+
   return (
     <div className="containers">
       {/* Background Video */}
-      <video autoPlay loop muted={isMuted} className="video-bg">
-        <source src="/images/hero.mp4" type="video/mp4" />
+      <video key={isMobile} autoPlay loop muted={isMuted} className="video-bg">
+        <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
