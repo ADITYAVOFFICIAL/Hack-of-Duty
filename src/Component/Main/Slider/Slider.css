@@ -141,7 +141,7 @@
   
   @media screen and (max-width: 800px) {
     .container-slider {
-      top: 75rem; /* Adjust this value as needed to prevent overlap */
+      top: 80rem; /* Adjust this value as needed to prevent overlap */
     }
   }
   

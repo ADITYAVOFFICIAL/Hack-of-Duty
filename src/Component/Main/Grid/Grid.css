@@ -90,7 +90,8 @@
     margin: 0 10rem;
 }
 .prizepool {
-    font-family: 'Hitmarker-Text', sans-serif;
+    font-family: 'Hitmarker-Text-Card', sans-serif;
+    font-size: 3.5rem!important;
 }
 @media screen and (max-width: 980px) {
     .container-grid-part {
@@ -144,7 +145,7 @@
     }
 
     .prizepool {
-        font-size: 1.5rem !important;
+        font-size: 3rem !important;
     }
 }
 
