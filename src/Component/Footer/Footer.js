@@ -7,6 +7,7 @@ export default function Footer() {
         { image: './images/general/footer-part/acm.webp' },
         { image: './images/general/footer-part/kdd.webp' },
         { image: './images/general/footer-part/srm.webp' },
+        { image: './images/general/footer-part/devfolio.webp' },
     ];
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -46,6 +47,7 @@ export default function Footer() {
                         <Icon {...iconData[0]} />
                         <Icon {...iconData[1]} />
                         <Icon {...iconData[2]} />
+                        <Icon {...iconData[3]} />
                     </div>
                     <div className='right-icons'>
                         <img src="./icons/acmfull.webp" alt="logo" className='img-icon1' />

@@ -169,6 +169,12 @@
         align-items: center;
         justify-content: center;
     }
+    .right-icons{
+        margin-left: -5rem;
+        scale: 3;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }
 
 @media screen and (max-width: 582px) {
