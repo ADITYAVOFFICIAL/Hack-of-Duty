@@ -4,8 +4,8 @@ import './Slider.css';
 
 export default function Slider() {
   const sliderData = [
-    { image: './images/main page/slider-games-part/google.png', text: 'Google', alt: 'Google Logo' },
-    { image: './images/main page/slider-games-part/aws.png', text: 'AWS', alt: 'AWS Logo' },
+    { image: './images/main page/slider-games-part/pol.png', text: 'Google', alt: 'POLYGON LOGO' },
+    { image: './images/main page/slider-games-part/eth.png', text: 'AWS', alt: 'ETHINDIA LOGO' },
     { image: './images/main page/slider-games-part/devfolio.png', text: 'DEVFOLIO', alt: 'DEVFOLIO LOGO' },
     { image: './images/main page/slider-games-part/micro.png', text: 'MICROSOFT', alt: 'Microsoft Logo' },
     { image: './images/main page/slider-games-part/dominos.png', text: 'DOMINOS', alt: 'Dominos Logo' },
