@@ -68,7 +68,7 @@ h2 {
 @media screen and (max-width: 800px) {
     .containers {
         animation: none;
-        background-image: url("https://srmsigkdd-cdn.netlify.app/images/hackofduty/landing.webp");
+        background-image: url("../../../../public/images/main page/landing-part/landing.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

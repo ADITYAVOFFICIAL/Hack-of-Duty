@@ -5,7 +5,7 @@ const AudioContext = createContext();
 export const useAudio = () => useContext(AudioContext);
 
 export const AudioProvider = ({ children }) => {
-  const audioRef = useRef(new Audio('https://srmsigkdd-cdn.netlify.app/images/hackofduty/desc.mp3'));
+  const audioRef = useRef(new Audio('/desc.mp3'));
   const isPlayingRef = useRef(false);
 
   const playAudio = () => {

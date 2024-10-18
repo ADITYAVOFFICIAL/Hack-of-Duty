@@ -21,7 +21,7 @@ export default function Landing() {
     }, []);
 
     const handleLearnMoreClick = () => {
-        const audio = new Audio('https://srmsigkdd-cdn.netlify.app/images/hackofduty/learn.mp3'); // Ensure the path is correct
+        const audio = new Audio('/learn.mp3'); // Ensure the path is correct
         audio.play(); // Play audio
 
         // Scroll down after a short delay (e.g., 200ms)
@@ -31,7 +31,7 @@ export default function Landing() {
     };
 
     const redirectToDevpost = () => {
-        const audio = new Audio('https://srmsigkdd-cdn.netlify.app/images/hackofduty/audio.mp3'); // Ensure the path is correct
+        const audio = new Audio('/audio.mp3'); // Ensure the path is correct
         audio.play(); // Play audio
 
         // Open the registration page after a delay
@@ -47,7 +47,7 @@ export default function Landing() {
     };
 
     // Determine the correct video source based on isMobile
-    const videoSrc = useMemo(() => (isMobile ? "https://srmsigkdd-cdn.netlify.app/images/hackofduty/mobile.mp4" : "https://srmsigkdd-cdn.netlify.app/images/hackofduty/hero.mp4"), [isMobile]);
+    const videoSrc = useMemo(() => (isMobile ? "/images/mobile.mp4" : "/images/hero.mp4"), [isMobile]);
 
     return (
         <div className="containers">
@@ -67,7 +67,7 @@ export default function Landing() {
 
             <section>
                 <div className='logo-image'>
-                    <img src="https://srmsigkdd-cdn.netlify.app/images/hackofduty/landing-logo.webp" alt="mw2 logo" />
+                    <img src="./images/main page/landing-part/landing-logo.webp" alt="mw2 logo" />
                 </div>
                 <div>
                     <h2 className='headingtext'>SRMSIGKDD's FLAGSHIP HACKATHON</h2>
