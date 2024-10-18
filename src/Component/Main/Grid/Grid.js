@@ -7,6 +7,7 @@ export default function Grid() {
     { image: './images/main page/grid-pics-part/1.webp', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 1' },
     { image: './images/main page/grid-pics-part/2.webp', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 2' },
     { image: './images/main page/grid-pics-part/3.webp', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 3' },
+    { image: './images/main page/grid-pics-part/result.webp', logo: './images/main page/logos-part/gridlogo.svg', text: 'ROUND 4' }
   ];
 
   return (
