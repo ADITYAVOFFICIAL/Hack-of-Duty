@@ -4,12 +4,12 @@ import './Slider.css';
 
 export default function Slider() {
   const sliderData = [
-    { image: './images/main page/slider-games-part/google.png', text: 'Google' },
-    { image: './images/main page/slider-games-part/aws.png', text: 'AWS' },
-    { image: './images/main page/slider-games-part/mongo.png', text: 'MONGODB' },
-    { image: './images/main page/slider-games-part/micro.png', text: 'MICROSOFT' },
-    { image: './images/main page/slider-games-part/dominos.png', text: 'DOMINOS' },
-    { image: './images/main page/slider-games-part/coco.png', text: 'COCOA COLA' }
+    { image: './images/main page/slider-games-part/google.png', text: 'Google', alt: 'Google Logo' },
+    { image: './images/main page/slider-games-part/aws.png', text: 'AWS', alt: 'AWS Logo' },
+    { image: './images/main page/slider-games-part/devfolio.png', text: 'DEVFOLIO', alt: 'DEVFOLIO LOGO' },
+    { image: './images/main page/slider-games-part/micro.png', text: 'MICROSOFT', alt: 'Microsoft Logo' },
+    { image: './images/main page/slider-games-part/dominos.png', text: 'DOMINOS', alt: 'Dominos Logo' },
+    { image: './images/main page/slider-games-part/coco.png', text: 'COCOA COLA', alt: 'Coca-Cola Logo' }
   ];
 
   return (

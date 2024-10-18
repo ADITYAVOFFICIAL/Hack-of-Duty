@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useAudio } from '../AudioContext/AudioContext';
 
-export default function GameItem({ image, text, description, onMouseEnter, onMouseLeave }) {
+export default function GameItem({ image, text, description, onMouseEnter = () => {}, onMouseLeave = () => {} }) {
   const { playAudio, pauseAudio } = useAudio();
   const [isHovered, setIsHovered] = useState(false);
 
@@ -78,4 +78,3 @@ export default function GameItem({ image, text, description, onMouseEnter, onMou
     </div>
   );
 }
-  
