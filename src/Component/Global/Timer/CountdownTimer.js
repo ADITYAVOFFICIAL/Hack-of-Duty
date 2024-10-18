@@ -1,8 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react';
 import './CountdownTimer.css'; // Import the CSS for the Countdown Timer
 
 const CountdownTimer = () => {
-    const targetDate = new Date('2024-10-28T10:00:00+05:30'); // IST timezone
+    // Memoize the target date to prevent unnecessary re-renders
+    const targetDate = useMemo(() => new Date('2024-10-28T10:00:00+05:30'), []);
+
     const [timeLeft, setTimeLeft] = useState({});
     const [isLive, setIsLive] = useState(false); // State to track if the event is live
     const audioRef = useRef(null); // Create a ref for the audio element
@@ -28,7 +30,7 @@ const CountdownTimer = () => {
         }, 1000);
 
         return () => clearInterval(interval);
-    }, [targetDate]);
+    }, [targetDate]); // targetDate is now a stable dependency
 
     const handlePlayAudio = () => {
         if (audioRef.current) {
