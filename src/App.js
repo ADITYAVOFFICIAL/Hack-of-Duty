@@ -1,16 +1,15 @@
-import React from 'react';
-import Footer from './Component/Footer/Footer';
+import React, { Suspense } from 'react';
 import NavBar from './Component/Header/NavBar';
-import GetGame from './Component/Main/GetGame/GetGame';
-import Grid from './Component/Main/Grid/Grid';
-import Landing from './Component/Main/Landing/Landing';
-import Slider from './Component/Main/Slider/Slider';
-import Poster from "./Component/Main/Poster/Poster";
-import { AudioProvider } from './Component/Global/AudioContext/AudioContext';
+import Footer from './Component/Footer/Footer';
 import CountdownTimer from './Component/Global/Timer/CountdownTimer';
+import { AudioProvider } from './Component/Global/AudioContext/AudioContext';
+const Landing = React.lazy(() => import('./Component/Main/Landing/Landing'));
+const Grid = React.lazy(() => import('./Component/Main/Grid/Grid'));
+const GetGame = React.lazy(() => import('./Component/Main/GetGame/GetGame'));
+const Slider = React.lazy(() => import('./Component/Main/Slider/Slider'));
+const Poster = React.lazy(() => import('./Component/Main/Poster/Poster'));
 
 export default function App() {
-  // Load the Devfolio SDK
   React.useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://apply.devfolio.co/v2/sdk.js';
@@ -25,16 +24,16 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <Landing />
-      <CountdownTimer />
-      <Grid />
-      <AudioProvider>
-        <GetGame />
-      </AudioProvider>
-      <Slider />
-      <Poster />
-
-      {/* Apply with Devfolio Button */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Landing />
+        <CountdownTimer />
+        <Grid />
+        <AudioProvider>
+          <GetGame />
+        </AudioProvider>
+        <Slider />
+        <Poster />
+      </Suspense>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
         <div 
           className="apply-button" 
@@ -43,7 +42,6 @@ export default function App() {
           style={{ height: '44px', width: '312px' }}
         ></div>
       </div>
-
       <Footer />
     </>
   );
