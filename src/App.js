@@ -38,7 +38,7 @@ export default function App() {
       <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
         <div 
           className="apply-button" 
-          data-hackathon-slug="hack-of-duty" 
+          data-hackathon-slug="hackofduty" 
           data-button-theme="light"
           style={{ height: '44px', width: '312px' }}
         ></div>
