@@ -11,12 +11,23 @@ export default class NavBar extends React.Component {
             showMobileMenu: false, // New state for mobile menu
         };
         this.toggleMobileMenu = this.toggleMobileMenu.bind(this); // New method for mobile menu
+        this.handleRegisterClick = this.handleRegisterClick.bind(this); // Method to handle register click
     }
 
     toggleMobileMenu() {
         this.setState({
             showMobileMenu: !this.state.showMobileMenu
         });
+    }
+
+    handleRegisterClick() {
+        const audio = new Audio('/audio.mp3'); // Ensure the path is correct
+        audio.play(); // Play audio
+
+        // Redirect after audio plays
+        audio.onended = () => {
+            window.open('https://devpost.com/', '_blank'); // Redirect to the register page
+        };
     }
 
     render() {
@@ -42,7 +53,7 @@ export default class NavBar extends React.Component {
                             <a href='https://srmsigkdd.vercel.app/' target='_blank'>SRMSIGKDD WEBSITE</a>
                         </div>
                         <div className='pre-part'>
-                            <a href='https://devfolio.co/discover' target='_blank'> REGISTER NOW</a>
+                            <a href='#' onClick={this.handleRegisterClick}>REGISTER NOW</a>
                         </div>
                         <img src="./images/general/header-nav/icons8-menu-48.png" alt="hamburger menu" className='ham-menu' onClick={this.toggleMobileMenu} />
                     </div>

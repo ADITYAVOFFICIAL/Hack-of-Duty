@@ -1,7 +1,10 @@
+/* src/Component/Grid/Grid.css */
+
 @font-face {
     font-family: 'Hitmarker-Text';
     src: url('/public/hitmarkertext.ttf') format('truetype');
 }
+
 .container-grid-part {
     position: relative;
     top: 50px;
@@ -13,14 +16,13 @@
     grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
     grid-template-rows: repeat(2, 1fr);
 }
-
 .one {
     width: 100%;
     min-height: 200px;
     height: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
-    background-image: url("./../../../../public/images/main page/grid-pics-part/cq5dam.thumbnail.319.319\(10\).png");
+    background-image: url("./../../../../public/images/main page/grid-pics-part/cq5dam.thumbnail.319.319(10).png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -30,23 +32,46 @@
     animation: picShake 2s linear infinite;
     transition: scale 2s;
 }
+
 .one button {
     background-color: #ed772d;
     color: #262523;
-    width: 20rem;
-    font-size: 1.5em; /* Further increase the font size */
-    padding: 45px 60px; /* Further adjust padding to increase button size */
-    border: none; /* Remove default border */
-    box-shadow: 0 0 10px #ed772d; /* Add glow effect */
+    width: 100%; /* Make buttons responsive */
+    max-width: 300px; /* Limit max width */
+    font-size: 1.5em;
+    padding: 20px 10px; /* Adjust padding for responsiveness */
+    border: none;
+    box-shadow: 0 0 10px #ed772d;
     transition: box-shadow 0.3s ease-in-out;
-    pointer-events: none; 
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; /* Add some spacing between buttons */
 }
-.prizepool{
+
+.large-button {
+    background-color: #ed772d; /* Unique background color */
+    color: #fff; /* Change text color for contrast */
+    width: 350px; /* Increase width */
+    height: 80px; /* Increase height */
+    font-size: 2.5em; /* Make the largest button even bigger */
+    border-radius: 5px; /* Slightly larger border radius */
+    padding: 20px; /* Adjust padding for more space around text */
+}
+
+/* New class for smaller buttons */
+.small-button {
+    font-size: 1rem; /* Smaller font size */
+}
+
+.one button i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.prizepool {
     font-family: 'Hitmarker-Text', sans-serif;
 }
+
 .text-box {
     display: flex;
     flex-direction: column;
@@ -79,7 +104,7 @@
     60% {
         transform: scale(1.01);
     }
-    20% {
+    80% {
         transform: scale(1.00);
     }
 }
@@ -87,7 +112,6 @@
 /***** responsive codes *****/
 
 @media screen and (max-width: 980px) {
-
     .container-grid-part {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
@@ -105,10 +129,13 @@
         margin: 0 2rem;
     }
 
+    .one button {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+        padding: 15px 5px; /* Adjust padding for smaller screens */
+    }
 }
 
 @media screen and (max-width: 801px) {
-
     .container-grid-part {
         top: 25rem;
     }
@@ -129,17 +156,17 @@
         width: 250px;
         margin: 0 2rem;
     }
-    .one button{
+
+    .one button {
         padding: 10px;
     }
-    .prizepool{
-        font-size: 1.5rem!important;
-    }
 
+    .prizepool {
+        font-size: 1.5rem !important;
+    }
 }
 
 @media screen and (max-width: 370px) {
-
     .text-box span {
         text-align: center;
         font-size: .9rem;
@@ -156,4 +183,8 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 
+    .one button {
+        font-size: 0.9em; /* Smallest font size */
+        padding: 8px 5px; /* Smallest padding */
+    }
 }
