@@ -7,7 +7,6 @@ const Landing = React.lazy(() => import('./Component/Main/Landing/Landing'));
 const Grid = React.lazy(() => import('./Component/Main/Grid/Grid'));
 const GetGame = React.lazy(() => import('./Component/Main/GetGame/GetGame'));
 const Slider = React.lazy(() => import('./Component/Main/Slider/Slider'));
-const Poster = React.lazy(() => import('./Component/Main/Poster/Poster'));
 
 export default function App() {
   React.useEffect(() => {
@@ -32,16 +31,7 @@ export default function App() {
           <GetGame />
         </AudioProvider>
         <Slider />
-        <Poster />
       </Suspense>
-      <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
-        <div 
-          className="apply-button" 
-          data-hackathon-slug="hackofduty" 
-          data-button-theme="light"
-          style={{ height: '44px', width: '312px' }}
-        ></div>
-      </div>
       <Footer />
     </>
   );
