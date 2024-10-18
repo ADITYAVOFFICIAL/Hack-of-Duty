@@ -1,7 +1,6 @@
 .poster-container {
     position: relative;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -17,11 +16,6 @@
     border-radius: 3px;
 }
 
-/* Apply button styling */
-.apply-button {
-    margin-top: 20px; /* Adds space between the image and the button */
-}
-
 /* Responsive adjustments */
 @media screen and (max-width: 800px) {
     .poster-container {
@@ -29,11 +23,6 @@
         margin-top: 75rem;
         margin-bottom: -83rem;
         width: 100%; /* Ensure full width on mobile */
-    }
-
-    .apply-button {
-        width: 260px; /* Make button smaller on smaller screens */
-        height: 40px;
     }
 }
 
@@ -48,10 +37,5 @@
     .poster-image {
         max-width: 100%; /* Make image fill the container */
         height: auto; 
-    }
-
-    .apply-button {
-        width: 220px; /* Further reduce button size for mobile */
-        height: 36px;
     }
 }
