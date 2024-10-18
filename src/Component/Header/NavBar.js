@@ -12,6 +12,7 @@ export default class NavBar extends React.Component {
         };
         this.toggleMobileMenu = this.toggleMobileMenu.bind(this); // New method for mobile menu
         this.handleRegisterClick = this.handleRegisterClick.bind(this); // Method to handle register click
+        this.playPingSound = this.playPingSound.bind(this); // Bind the new method
     }
 
     toggleMobileMenu() {
@@ -20,14 +21,23 @@ export default class NavBar extends React.Component {
         });
     }
 
+    playPingSound() {
+        const pingAudio = new Audio('/ping.mp3'); // Ensure the path is correct
+        pingAudio.play(); // Play ping sound
+        // Open the link after a short delay
+        setTimeout(() => {
+            window.open('https://srmsigkdd.vercel.app/', '_blank');
+        }, 100); // Adjust the delay as needed
+    }
+
     handleRegisterClick() {
         const audio = new Audio('/audio.mp3'); // Ensure the path is correct
         audio.play(); // Play audio
 
-        // Redirect after audio plays
-        audio.onended = () => {
+        // Open the registration page after a delay
+        setTimeout(() => {
             window.open('https://devpost.com/', '_blank'); // Redirect to the register page
-        };
+        }, 100); // Adjust the delay as needed
     }
 
     render() {
@@ -50,10 +60,10 @@ export default class NavBar extends React.Component {
                     <div className='right-box'>
                         <div className='shield-part'>
                             <img src="./images/general/header-nav/shield_icon_no_drop.png" alt="shield icon" />
-                            <a href='https://srmsigkdd.vercel.app/' target='_blank' rel='noopener noreferrer'>SRMSIGKDD WEBSITE</a>
+                            <a href="#" onClick={this.playPingSound} rel='noopener noreferrer'>SRMSIGKDD WEBSITE</a>
                         </div>
                         <div className='pre-part'>
-                            <a href='#' onClick={this.handleRegisterClick}>REGISTER NOW</a>
+                            <a href="#" onClick={this.handleRegisterClick}>REGISTER NOW</a>
                         </div>
                         <img src="./images/general/header-nav/icons8-menu-48.png" alt="hamburger menu" className='ham-menu' onClick={this.toggleMobileMenu} />
                     </div>
