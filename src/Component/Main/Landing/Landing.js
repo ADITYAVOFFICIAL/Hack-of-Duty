@@ -36,7 +36,7 @@ export default function Landing() {
 
         // Open the registration page after a delay
         setTimeout(() => {
-            window.open('https://devpost.com/', '_blank'); // Redirect to the register page
+            window.open('https://hackofduty.devfolio.co/', '_blank'); // Redirect to the register page
         }, 100);
     };
 
