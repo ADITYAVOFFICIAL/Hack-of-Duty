@@ -172,8 +172,8 @@
 /***** responsive codes *****/
 
 @media screen and (max-width: 1250px) {
-    .nav-list, .log-part, .shield-part {
-        display: none;
+    .nav-list, .log-part, .shield-part.desktop-only {
+        display: none; /* Hide on mobile */
     }
 
     .ham-menu {
@@ -207,11 +207,40 @@
     .nav-list.active li a:hover {
         color: #ed772d;
     }
+
+    /* Styles for the mobile SRMSIGKDD link */
+    .mobile-srmsigkdd {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        color: #969696;
+        font-weight: bold;
+    }
+
+    .mobile-srmsigkdd img {
+        width: 20px;
+        margin-right: 0.5rem;
+    }
+
+    .mobile-srmsigkdd a {
+        color: #969696;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    .mobile-srmsigkdd a:hover {
+        color: #ed772d; /* Change color on hover */
+    }
 }
 
 @media screen and (max-width: 470px) {
     .pre-part {
         font-size: 13px!important;
         font-weight: 800;
+    }
+
+    /* Show shield-part in mobile */
+    .shield-part {
+        display: flex; /* Ensure it is displayed on mobile */
     }
 }

@@ -50,6 +50,13 @@ export default class NavBar extends React.Component {
                         </div>
                         <nav>
                             <ul className={`nav-list ${this.state.showMobileMenu ? 'active' : ''}`}>
+                                {/* Move SRMSIGKDD link to the mobile menu */}
+                                {this.state.showMobileMenu && (
+                                    <li className="mobile-srmsigkdd">
+                                        <img src="./images/general/header-nav/shield_icon_no_drop.png" alt="shield icon" />
+                                        <a href="#" onClick={this.playPingSound} rel='noopener noreferrer'>SRMSIGKDD WEBSITE</a>
+                                    </li>
+                                )}
                                 <li><a href="#tracks">TRACKS</a></li>
                                 <li><a href="#rounds">ROUNDS</a></li>
                                 <li><a href="#sponsors">SPONSORS</a></li>
@@ -58,7 +65,7 @@ export default class NavBar extends React.Component {
                         </nav>
                     </div>
                     <div className='right-box'>
-                        <div className='shield-part'>
+                        <div className='shield-part desktop-only'>
                             <img src="./images/general/header-nav/shield_icon_no_drop.png" alt="shield icon" />
                             <a href="#" onClick={this.playPingSound} rel='noopener noreferrer'>SRMSIGKDD WEBSITE</a>
                         </div>

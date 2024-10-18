@@ -33,9 +33,11 @@ export default function Landing() {
     const redirectToDevpost = () => {
         const audio = new Audio('/audio.mp3'); // Ensure the path is correct
         audio.play(); // Play audio
-        audio.onended = () => {
-            window.open('https://devpost.com', '_blank'); // Redirect to the Devpost page
-        };
+
+        // Open the registration page after a delay
+        setTimeout(() => {
+            window.open('https://devpost.com/', '_blank'); // Redirect to the register page
+        }, 100);
     };
 
     const toggleMute = () => {
