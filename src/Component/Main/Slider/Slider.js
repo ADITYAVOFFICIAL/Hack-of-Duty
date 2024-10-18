@@ -7,9 +7,9 @@ export default function Slider() {
     { image: './images/main page/slider-games-part/pol.png', text: 'POLYGON', alt: 'POLYGON LOGO' },
     { image: './images/main page/slider-games-part/eth.png', text: 'ETHINDIA', alt: 'ETHINDIA LOGO' },
     { image: './images/main page/slider-games-part/devfolio.png', text: 'DEVFOLIO', alt: 'DEVFOLIO LOGO' },
-    { image: './images/main page/slider-games-part/micro.png', text: 'MICROSOFT', alt: 'Microsoft Logo' },
-    { image: './images/main page/slider-games-part/dominos.png', text: 'DOMINOS', alt: 'Dominos Logo' },
-    { image: './images/main page/slider-games-part/coco.png', text: 'COCOA COLA', alt: 'Coca-Cola Logo' }
+    { image: './images/main page/slider-games-part/kdd.png', text: 'SIGKDD', alt: 'SIGKDD' },
+    { image: './images/main page/slider-games-part/srm.png', text: 'SRM UNIVERSITY', alt: 'SRM UNIVERSITY' },
+    { image: './images/main page/slider-games-part/dsbs.png', text: 'DSBS Dept.', alt: 'DSBS Dept.' }
   ];
 
   return (
