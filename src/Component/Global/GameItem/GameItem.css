@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Hitmarker-Text-Card';
+    src: url('/public/hittext.ttf') format('truetype');
+}
 .container-get {
     position: relative;
     max-width: 275px;
@@ -17,7 +21,7 @@
 .container-get .text-detail {
     text-align: center;
     color: rgba(255, 255, 255, 0.722);
-    font-weight: bold !important; /* Add !important to ensure it takes precedence */
+    font-weight: bold !important;
     font-size: .9rem;
     width: 100%;
     position: absolute;
@@ -26,3 +30,33 @@
     backdrop-filter: blur(2px);
     border-radius: 2px;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay-text {
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex; /* Use flex to align children properly */
+    flex-wrap: wrap; /* Allow words to wrap onto the next line */
+    justify-content: center; /* Center align words */
+}
+
+.overlay-word {
+    margin: 0 0.2rem; /* Add horizontal margin to words for spacing */
+    /* Adjust vertical alignment if necessary */
+    line-height: 1.5;
+    font-family: 'Hitmarker-Text-Card', sans-serif; /* Adjust line height for better spacing */
+}
+

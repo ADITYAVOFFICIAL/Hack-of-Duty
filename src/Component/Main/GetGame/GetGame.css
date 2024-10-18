@@ -2,6 +2,11 @@
     font-family: 'Hitmarker-Text';
     src: url('/public/hitmarkertext.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Hitmarker-Title';
+    src: url('/public/hitmarker.ttf') format('truetype');
+}
+
 .container-game {
     position: relative;
     display: flex;
@@ -28,7 +33,7 @@
     text-align: center;
     width: 100%;
     margin-bottom: 4rem;
-    font-family: 'Hitmarker-Text', sans-serif;
+    font-family: 'Hitmarker-Title', sans-serif;
 }
 .game-tainer .container-get .text-detail {
     text-align: center;

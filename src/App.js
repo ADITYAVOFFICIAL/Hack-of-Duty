@@ -6,13 +6,16 @@ import Grid from './Component/Main/Grid/Grid';
 import Landing from './Component/Main/Landing/Landing';
 import Slider from './Component/Main/Slider/Slider';
 import Poster from "./Component/Main/Poster/Poster"
+import { AudioProvider } from './Component/Global/AudioContext/AudioContext';
 export default function App() {
   return (
     <>
       <NavBar />
       <Landing />
       <Grid />
+      <AudioProvider>
       <GetGame />
+      </AudioProvider>
       <Slider />
       <Poster />
       <Footer />
