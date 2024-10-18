@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Hitmarker-Text';
     src: url('/public/hitmarkertext.ttf') format('truetype');
-  }
+}
+
 .container-footer {
     margin: 0 auto;
     height: 600px;
@@ -12,14 +13,15 @@
     flex-direction: column;
 }
 
-.footer-nav ul{
-    height: 100px;
+.footer-nav ul {
+    height: 100px; /* This may be adjusted if needed */
     width: 100%;
     list-style-type: none;
     display: flex;
     align-items: center;
     color: #a59d95;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 0; /* Added to ensure no default padding interferes */
 }
 
 .footer-nav li {
@@ -32,10 +34,12 @@
     text-decoration: none;
     font-family: 'Hitmarker-Text', sans-serif;
 }
-.footer-nav li  a:hover {
+
+.footer-nav li a:hover {
     cursor: url('/public/icons/hov.png'), auto;
 }
-.footer-nav li  a:active {
+
+.footer-nav li a:active {
     cursor: url('/public/icons/conf.png'), auto;
 }
 
@@ -83,7 +87,6 @@
 /***** responsive codes *****/
 
 @media screen and (max-width: 1164px) {
-
     .container-footer {
         position: relative;
         top: 10rem;
@@ -91,7 +94,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-
     .footer-nav a {
         font-size: .7rem;
     }
@@ -114,14 +116,17 @@
 }
 
 @media screen and (max-width: 801px) {
-
     .container-footer {
         position: relative;
         top: 30rem;
     }
 
+    .footer-nav ul {
+        padding: 0.5rem 0; /* Adjust this value to decrease distance to border */
+    }
+
     .footer-nav li {
-        margin-bottom: 0;
+        margin-bottom: 0; /* Ensure there's no margin below the items */
     }
 
     .footer-nav a {
@@ -142,7 +147,6 @@
 }
 
 @media screen and (max-width: 633px) {
-
     .container-footer {
         position: relative;
         top: 53rem;
@@ -165,22 +169,18 @@
         align-items: center;
         justify-content: center;
     }
-
 }
 
 @media screen and (max-width: 582px) {
-
     .container-footer {
         position: relative;
         top: 70rem;
     }
-
 }
 
 @media screen and (max-width: 466px) {
-
     .footer-nav a {
-        font-size: .3rem;
+        font-size: .5rem;
     }
 
     .footer-nav {
@@ -204,11 +204,9 @@
         align-items: center;
         justify-content: center;
     }
-
 }
 
 @media screen and (max-width: 420px) {
-
     .container-footer {
         top: 75rem;
     }
@@ -224,11 +222,9 @@
     .left-icons {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 @media screen and (max-width: 260px) {
-
     .container-footer {
         top: 82rem;
     }

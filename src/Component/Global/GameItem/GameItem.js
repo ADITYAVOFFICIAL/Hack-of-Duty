@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useAudio } from '../AudioContext/AudioContext';
 
-export default function GameItem({ image, text, description }) {
+export default function GameItem({ image, text, description, onMouseEnter, onMouseLeave }) {
   const { playAudio, pauseAudio } = useAudio();
   const [isHovered, setIsHovered] = useState(false);
 
@@ -30,16 +30,22 @@ export default function GameItem({ image, text, description }) {
   }, [isHovered, playAudio, pauseAudio]);
 
   return (
-    <div 
-      className="container-get" 
-      onMouseEnter={() => setIsHovered(true)} 
-      onMouseLeave={() => setIsHovered(false)} 
+    <div
+      className="container-get"
+      onMouseEnter={() => {
+        setIsHovered(true);
+        onMouseEnter(); // Notify parent to handle hover
+      }}
+      onMouseLeave={() => {
+        setIsHovered(false);
+        onMouseLeave(); // Notify parent to handle unhover
+      }}
       onClick={(e) => e.preventDefault()}
     >
       <span className='text-detail'>{text}</span>
       <img src={image} alt="game images" />
       {isHovered && (
-        <motion.div 
+        <motion.div
           className='overlay'
           initial={{ y: '100%', opacity: 0 }} // Start from below and hidden
           animate={{ y: '0%', opacity: 1 }}   // Move to original position and visible
@@ -72,3 +78,4 @@ export default function GameItem({ image, text, description }) {
     </div>
   );
 }
+  

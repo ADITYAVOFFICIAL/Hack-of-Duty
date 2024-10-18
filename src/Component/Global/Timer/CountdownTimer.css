@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Hitmarker-Bold';
+    src: url('/public/bold.ttf') format('truetype');
+}
+
+.countdown-container {
+    position: relative; /* Needed to position video absolutely */
+    text-align: center;
+    padding: 10dvh 0dvh 0dvh 0dvh;
+    color: #ffffff; /* Set text color to white */
+    font-family: 'Hitmarker-Text-Card', sans-serif;
+}
+
+/* Ensure the video covers the entire background */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 38dvh;
+    object-fit: cover; /* This ensures the video covers the container */
+    z-index: -1; /* Place the video behind other content */
+}
+
+.countdown-heading {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    font-family: 'Hitmarker-Text-Card', sans-serif;
+}
+
+.live-banner {
+    font-size: 4rem; /* Adjust size for the live banner */
+    color: #ed772d; /* Use your specific color */
+    text-shadow: 0 0 20px rgba(237, 119, 45, 0.5); /* Optional shadow effect */
+    margin-top: 20px; /* Add some space above */
+    font-family: 'Hitmarker-Bold', sans-serif;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between time segments */
+    flex-wrap: wrap;
+    padding-top: 3dvh;
+}
+
+/* Card styles for time segments */
+.time-segment {
+    background-color: rgba(28, 28, 28, 0.905); /* Semi-transparent background */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(28, 28, 28, 0.5); /* Light shadow */
+    text-align: center;
+    flex: 1 1 150px; /* Allow flexible growth/shrink and set a minimum width */
+    max-width: 200px; /* Maximum width to maintain design consistency */
+    width: 80%; /* Set default width for desktop */
+}
+
+.time-label,
+.timer-label {
+    font-family: 'Hitmarker-Text-Card', sans-serif;
+}
+
+/* Ensure the time segments adaptively scale on mobile */
+@media (max-width: 600px) {
+    .time-segment {
+        width: 90%; /* Set width for mobile */
+    }
+    .live-banner {
+        font-size: 2.8rem; /* Adjust size for mobile */
+    }
+    .background-video{
+        height: 55dvh;
+    }
+}
+
+.time-segment span {
+    display: block;
+    font-size: 2rem; /* Reduced font size */
+    font-weight: bold;
+    line-height: 1.2; /* Set a line height for better spacing */
+    margin: 0; /* Remove margin to keep content centered */
+}
+
+.time-label {
+    font-size: 0.9rem; /* Reduced font size for labels */
+    color: #ed772d; /* Use your specific color for labels */
+    letter-spacing: 1px; /* Adjust letter spacing */
+    text-transform: uppercase; /* Make labels uppercase */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .countdown-heading {
+        font-size: 2.3rem; /* Reduce font size for mobile */
+    }
+
+    .time-segment {
+        padding: 15px; /* Reduce padding on mobile */
+    }
+
+    .time-segment span {
+        font-size: 1.5rem; /* Further reduce font size for time on mobile */
+    }
+
+    .time-label {
+        font-size: 0.8rem; /* Further reduce font size for labels on mobile */
+    }
+    
+    .countdown-timer {
+        scale: 0.9;
+    }
+
+    .countdown-container {
+        padding: 8dvh 0dvh 8dvh 0dvh;
+    }
+}

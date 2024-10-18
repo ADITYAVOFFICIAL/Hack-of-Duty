@@ -1,4 +1,3 @@
-// src/Component/Main/Poster/Poster.js
 import './Poster.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 

@@ -35,6 +35,7 @@
     margin-bottom: 4rem;
     font-family: 'Hitmarker-Title', sans-serif;
 }
+
 .game-tainer .container-get .text-detail {
     text-align: center;
     color: rgba(255, 255, 255, 0.722);
@@ -48,31 +49,32 @@
     background-color: rgba(0, 0, 0, 0.5); 
     font-family: 'Hitmarker-Text', sans-serif;
 }
+
 /***** responsive codes *****/
-
 @media screen and (max-width: 1265px) {
-
     .container-game {
         top: 10rem;
     }
-
 }
 
 @media screen and (max-width: 801px) {
-
     .container-game {
         top: 33rem;
     }
     .container-game .title{
         font-size: 3rem;
     }
-
 }
 
 @media screen and (max-width: 632px) {
-
     .container-game {
         top: 53rem;
     }
+}
 
+/* Hide the overlay on mobile */
+@media screen and (max-width: 768px) {
+    .overlay {
+        display: none; /* Hide the overlay */
+    }
 }

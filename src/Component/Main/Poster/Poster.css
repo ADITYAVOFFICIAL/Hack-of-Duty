@@ -21,7 +21,8 @@
     .poster-container {
         height: 400px;
         margin-top: 75rem;
-        margin-bottom: -80rem;
+        margin-bottom: -83rem;
+        width: 100%; /* Ensure full width on mobile */
     }
 }
 
@@ -29,5 +30,12 @@
     .poster-container {
         height: 250px;
         margin-top: 75rem;
+        width: 100%;
+        margin-top: 75rem;
+    }
+
+    .poster-image {
+        max-width: 100%; /* Make image fill the container */
+        height: auto; 
     }
 }
