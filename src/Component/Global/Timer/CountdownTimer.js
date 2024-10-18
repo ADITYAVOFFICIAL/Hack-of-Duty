@@ -38,9 +38,9 @@ const CountdownTimer = () => {
 
     return (
         <div className="countdown-container">
-            <audio ref={audioRef} src="/timer.mp3" preload="auto" />
+            <audio ref={audioRef} src="https://srmsigkdd-cdn.netlify.app/images/hackofduty/timer.mp3" preload="auto" />
             <video autoPlay muted loop className="background-video">
-                <source src="./images/main page/timer/bg.mp4" type="video/mp4" />
+                <source src="https://srmsigkdd-cdn.netlify.app/images/hackofduty/bg.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <h2 className="countdown-heading" onClick={handlePlayAudio}>Countdown</h2>

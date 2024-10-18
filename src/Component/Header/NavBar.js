@@ -22,7 +22,7 @@ export default class NavBar extends React.Component {
     }
 
     playPingSound() {
-        const pingAudio = new Audio('/ping.mp3'); // Ensure the path is correct
+        const pingAudio = new Audio('https://srmsigkdd-cdn.netlify.app/images/hackofduty/ping.mp3'); // Ensure the path is correct
         pingAudio.play(); // Play ping sound
         // Open the link after a short delay
         setTimeout(() => {
@@ -31,7 +31,7 @@ export default class NavBar extends React.Component {
     }
 
     handleRegisterClick() {
-        const audio = new Audio('/audio.mp3'); // Ensure the path is correct
+        const audio = new Audio('https://srmsigkdd-cdn.netlify.app/images/hackofduty/audio.mp3'); // Ensure the path is correct
         audio.play(); // Play audio
 
         // Open the registration page after a delay

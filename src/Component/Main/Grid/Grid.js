@@ -31,8 +31,8 @@ export default function Grid() {
 
   return (
     <div className="container-grid-part" id="rounds">
-      <audio ref={audioRef} src="/btn.mp3" preload="auto" />
-      <audio ref={winnerAudioRef} src="/winner.mp3" preload="auto" />
+      <audio ref={audioRef} src="https://srmsigkdd-cdn.netlify.app/images/hackofduty/btn.mp3" preload="auto" />
+      <audio ref={winnerAudioRef} src="https://srmsigkdd-cdn.netlify.app/images/hackofduty/winner.mp3" preload="auto" />
       <div id="tickets-section" className="one">
         <img src="./images/main page/grid-pics-part/bo3.webp" alt="cld icon" />
         <div className="text-box">
