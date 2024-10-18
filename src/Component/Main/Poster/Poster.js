@@ -19,9 +19,9 @@ export default function Poster() {
       <img src="./images/main page/poster/poster.gif" alt="Poster" className="poster-image" />
       <div 
         className="apply-button" 
-        data-hackathon-slug="hack-of-duty" 
+        data-hackathon-slug="SRMSIGKDD" 
         data-button-theme="light" 
-        style={{ height: '44px', width: '312px' }}
+        style={{ height: '44px', width: '312px',marginTop:"100px" }}
       ></div>
     </div>
   );
