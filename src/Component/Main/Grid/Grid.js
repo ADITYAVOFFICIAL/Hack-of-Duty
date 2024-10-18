@@ -12,19 +12,21 @@ export default function Grid() {
 
   return (
     <div className="container-grid-part" id="rounds">
-      <div id="tickets-section" className='one'>
+      <div id="tickets-section" className="one">
         <img src="./images/main page/grid-pics-part/bo3.webp" alt="cld icon" />
         <div className="text-box">
-          <span className='prizepool'>PRIZE POOL</span>
+          <span className="prizepool">PRIZE POOL</span>
           <Button text={"30,000 INR"} className="large-button" />
           <Button text={"1st: 15,000 INR"} className="small-button" />
           <Button text={"2nd: 10,000 INR"} className="small-button" />
           <Button text={"3rd: 5,000 INR"} className="small-button" />
         </div>
       </div>
-      {dataList.map((item, index) => (
-        <GridItem key={index} {...item} />
-      ))}
+      <div className="grid-items-container">
+        {dataList.map((item, index) => (
+          <GridItem key={index} {...item} />
+        ))}
+      </div>
     </div>
   );
 }

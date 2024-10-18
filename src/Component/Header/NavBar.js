@@ -50,7 +50,7 @@ export default class NavBar extends React.Component {
                     <div className='right-box'>
                         <div className='shield-part'>
                             <img src="./images/general/header-nav/shield_icon_no_drop.png" alt="shield icon" />
-                            <a href='https://srmsigkdd.vercel.app/' target='_blank'>SRMSIGKDD WEBSITE</a>
+                            <a href='https://srmsigkdd.vercel.app/' target='_blank' rel='noopener noreferrer'>SRMSIGKDD WEBSITE</a>
                         </div>
                         <div className='pre-part'>
                             <a href='#' onClick={this.handleRegisterClick}>REGISTER NOW</a>
