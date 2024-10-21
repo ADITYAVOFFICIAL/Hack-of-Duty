@@ -60,7 +60,7 @@ export default class NavBar extends React.Component {
                                 <li><a href="#tracks">TRACKS</a></li>
                                 <li><a href="#rounds">ROUNDS</a></li>
                                 <li><a href="#sponsors">SPONSORS</a></li>
-                                <li><a href="#feedback">FEEDBACK</a></li>
+                                <li><a href="#faq">FAQs</a></li>
                             </ul>
                         </nav>
                     </div>

@@ -3,6 +3,8 @@ import NavBar from './Component/Header/NavBar';
 import Footer from './Component/Footer/Footer';
 import CountdownTimer from './Component/Global/Timer/CountdownTimer';
 import { AudioProvider } from './Component/Global/AudioContext/AudioContext';
+import FAQ from './Component/Global/FAQ/FAQ';
+
 const Landing = React.lazy(() => import('./Component/Main/Landing/Landing'));
 const Grid = React.lazy(() => import('./Component/Main/Grid/Grid'));
 const GetGame = React.lazy(() => import('./Component/Main/GetGame/GetGame'));
@@ -17,7 +19,7 @@ export default function App() {
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    }
+    };
   }, []);
 
   return (
@@ -31,6 +33,7 @@ export default function App() {
           <GetGame />
         </AudioProvider>
         <Slider />
+        <FAQ /> {/* Add FAQ component between Slider and Footer */}
       </Suspense>
       <Footer />
     </>
